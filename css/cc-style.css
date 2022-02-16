@@ -1,0 +1,18 @@
+.cc-lch-logo {
+    width: 30%;
+    padding-top: 20px;
+}
+.cc-coming {
+  padding-top: 20px;
+  color: #fff;
+  text-align: center !important;
+  text-transform: uppercase;
+  font-family: 'Linearicons-Free';
+  font-size: 20px !important;
+}
+a {
+  color: #f79c39;
+}
+a:hover {
+  color: #5c9631;
+}
