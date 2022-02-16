@@ -1,7 +1,8 @@
-(function($) { "use strict";
+(function ($) {
+    "use strict";
 
     /*========== PAGE LOADING ==========*/
-    $(window).on("load", function(){
+    $(window).on("load", function () {
         $('.images-preloader').fadeOut();
     })
     $("body").removeClass("preload");
@@ -11,14 +12,14 @@
     var duration = 1000;
     var upToTop = $(".click-to-top");
     upToTop.hide();
-    $(window).on('scroll', function() {
+    $(window).on('scroll', function () {
         if ($(this).scrollTop() > offset) {
             upToTop.fadeIn(1000);
         } else {
             upToTop.fadeOut(1000);
         }
     });
-    upToTop.on('click', function(event) {
+    upToTop.on('click', function (event) {
         $('html, body').animate({ scrollTop: 0 }, 1000);
     });
 
@@ -37,9 +38,9 @@
             delay: 7000,
             responsiveLevels: [1920, 1500, 1200, 992, 768],
             /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
-            gridwidth:[windowWidth, windowWidth, 1200, 992, 768],
+            gridwidth: [windowWidth, windowWidth, 1200, 992, 768],
             /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
-            gridheight:[windowHeight, windowHeight, 600, 500, 700],
+            gridheight: [windowHeight, windowHeight, 600, 500, 700],
 
             /* basic navigation arrows and bullets */
             navigation: {
@@ -51,14 +52,14 @@
                 }
             },
 
-            visibilityLevels:[1920, 1500, 1200, 992, 768]
+            visibilityLevels: [1920, 1500, 1200, 992, 768]
         });
         $('#rev_slider_2').show().revolution({
             responsiveLevels: [1920, 1500, 1200, 992, 768],
             /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
-            gridwidth:[slider_2_width, slider_2_width, 1200, 992, 768],
+            gridwidth: [slider_2_width, slider_2_width, 1200, 992, 768],
             /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
-            gridheight:[slider_2_height, slider_2_height, 600, 500, 620],
+            gridheight: [slider_2_height, slider_2_height, 600, 500, 620],
 
             /* basic navigation arrows and bullets */
             navigation: {
@@ -73,12 +74,12 @@
             delay: 7000,
             responsiveLevels: [1920, 1400, 1200, 992, 768],
             /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
-            gridwidth:[windowWidth, windowWidth, 1200, 992, 768],
+            gridwidth: [windowWidth, windowWidth, 1200, 992, 768],
             /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
-            gridheight:[windowHeight, windowHeight, 600, 500, 620],
+            gridheight: [windowHeight, windowHeight, 600, 500, 620],
 
-            visibilityLevels:[1920, 1400, 1200, 992, 768],
-            
+            visibilityLevels: [1920, 1400, 1200, 992, 768],
+
             stopLoop: "on",
             stopAfterLoops: 0,
             stopAtSlide: 1,
@@ -102,15 +103,15 @@
                 }
             },
 
-            visibilityLevels:[1920, 1400, 1200, 992, 768]
+            visibilityLevels: [1920, 1400, 1200, 992, 768]
         });
         $('#rev_slider_4').show().revolution({
             delay: 7000,
             responsiveLevels: [1920, 1500, 1200, 992, 768],
             /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
-            gridwidth:[windowWidth, windowWidth, 1200, 992, 768],
+            gridwidth: [windowWidth, windowWidth, 1200, 992, 768],
             /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
-            gridheight:[windowHeight, windowHeight, 600, 500, 620],
+            gridheight: [windowHeight, windowHeight, 600, 500, 620],
 
             /* basic navigation arrows and bullets */
             navigation: {
@@ -122,15 +123,15 @@
                 }
             },
 
-            visibilityLevels:[1920, 1500, 1200, 992, 768]
+            visibilityLevels: [1920, 1500, 1200, 992, 768]
         });
         $('#rev_slider_5').show().revolution({
             delay: 5000,
             responsiveLevels: [1920, 1500, 1200, 992, 768],
             /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
-            gridwidth:[windowWidth, windowWidth, 1200, 992, 768],
+            gridwidth: [windowWidth, windowWidth, 1200, 992, 768],
             /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
-            gridheight:[windowHeight, windowHeight, 600, 500, 700],
+            gridheight: [windowHeight, windowHeight, 600, 500, 700],
 
             stopLoop: "on",
             stopAfterLoops: 0,
@@ -154,15 +155,15 @@
                 }
             },
 
-            visibilityLevels:[1920, 1500, 1200, 768]
+            visibilityLevels: [1920, 1500, 1200, 768]
         });
         $('#rev_slider_6').show().revolution({
             delay: 7000,
             responsiveLevels: [1920, 1500, 1200, 992, 768],
             /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
-            gridwidth:[windowWidth, windowWidth, 1200, 992, 768],
+            gridwidth: [windowWidth, windowWidth, 1200, 992, 768],
             /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
-            gridheight:[windowHeight , windowHeight, 600, 500, 680],
+            gridheight: [windowHeight, windowHeight, 600, 500, 680],
 
             stopLoop: "on",
             stopAfterLoops: 0,
@@ -186,15 +187,15 @@
                     swipe_direction: 'horizontal'
                 }
             },
-            visibilityLevels:[1920, 1500, 1200, 768]
+            visibilityLevels: [1920, 1500, 1200, 768]
         });
         $('#rev_slider_7').show().revolution({
             delay: 7000,
             responsiveLevels: [1920, 1500, 1200, 992, 768],
             /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
-            gridwidth:[1170, 930, 1200, 992, 768],
+            gridwidth: [1170, 930, 1200, 992, 768],
             /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
-            gridheight:[slideshow_7_height , slideshow_7_height, 600, 500, 800],
+            gridheight: [slideshow_7_height, slideshow_7_height, 600, 500, 800],
 
             stopLoop: "on",
             stopAfterLoops: 0,
@@ -218,15 +219,15 @@
                     swipe_direction: 'horizontal'
                 }
             },
-            visibilityLevels:[1920, 1500, 1200, 992, 768]
+            visibilityLevels: [1920, 1500, 1200, 992, 768]
         });
         $('#rev_slider_8').show().revolution({
             delay: 7000,
             responsiveLevels: [1920, 1500, 1200, 992, 768],
             /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
-            gridwidth:[windowWidth, windowWidth, 1200, 992, 768],
+            gridwidth: [windowWidth, windowWidth, 1200, 992, 768],
             /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
-            gridheight:[windowHeight, windowHeight, 600, 500, 620],
+            gridheight: [windowHeight, windowHeight, 600, 500, 620],
 
             /* basic navigation arrows and bullets */
             navigation: {
@@ -237,15 +238,15 @@
                     swipe_direction: 'horizontal'
                 }
             },
-            visibilityLevels:[1920, 1500, 1200, 992, 768]
+            visibilityLevels: [1920, 1500, 1200, 992, 768]
         });
         $('#rev_slider_11').show().revolution({
             delay: 7000,
             responsiveLevels: [1920, 1500, 1200, 992, 768],
             /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
-            gridwidth:[windowWidth, windowWidth, 1200, 992, 768],
+            gridwidth: [windowWidth, windowWidth, 1200, 992, 768],
             /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
-            gridheight:[windowHeight, windowHeight, 600, 500, 700],
+            gridheight: [windowHeight, windowHeight, 600, 500, 700],
 
             stopLoop: "on",
             stopAfterLoops: 0,
@@ -269,15 +270,15 @@
                     swipe_direction: 'horizontal'
                 }
             },
-            visibilityLevels:[1920, 1500, 1200, 992, 768]
+            visibilityLevels: [1920, 1500, 1200, 992, 768]
         });
         $('#rev_slider_12').show().revolution({
             delay: 7000,
             responsiveLevels: [1920, 1500, 1200, 992, 768],
             /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
-            gridwidth:[windowWidth, windowWidth, 1200, 992, 768],
+            gridwidth: [windowWidth, windowWidth, 1200, 992, 768],
             /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
-            gridheight:[windowHeight, windowHeight, 600, 500, 700],
+            gridheight: [windowHeight, windowHeight, 600, 500, 700],
 
             /* basic navigation arrows and bullets */
             navigation: {
@@ -297,15 +298,15 @@
                     swipe_direction: 'horizontal'
                 }
             },
-            visibilityLevels:[1920, 1500, 1200, 992, 768]
+            visibilityLevels: [1920, 1500, 1200, 992, 768]
         });
         $('#rev_slider_13').show().revolution({
             delay: 5000,
             responsiveLevels: [1920, 1500, 1200, 992, 768],
             /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
-            gridwidth:[windowWidth, windowWidth, 1200, 992, 768],
+            gridwidth: [windowWidth, windowWidth, 1200, 992, 768],
             /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
-            gridheight:[windowHeight, windowHeight, 600, 500, 700],
+            gridheight: [windowHeight, windowHeight, 600, 500, 700],
 
             stopLoop: "on",
             stopAfterLoops: 0,
@@ -320,8 +321,9 @@
                     swipe_direction: 'horizontal'
                 }
             },
-            visibilityLevels:[1920, 1500, 1200, 992, 768]
+            visibilityLevels: [1920, 1500, 1200, 992, 768]
         });
+
         $('#rev_slider_14').show().revolution({
             delay: 5000,
             responsiveLevels: [1920, 1500, 1200, 992, 768],
@@ -330,13 +332,16 @@
             /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
             gridheight:[windowHeight, windowHeight, 600, 500, 700],
 
-            stopLoop: "on",
-            stopAfterLoops: 0,
-            stopAtSlide: 1,
+            // // stopLoop: "on",
+            // // stopAfterLoops: 0,
+            // // stopAtSlide: 1,
+            stopLoop: "off",
+            stopAfterLoops: -1,
+            stopAtSlide: -1,
 
             /* basic navigation arrows and bullets */
             navigation: {
-                onHoverStop: true,
+                // onHoverStop: true,
                 bullets: {
                     enable: true,
                     hide_onleave: false,
@@ -354,7 +359,7 @@
             },
             visibilityLevels:[1920, 1500, 1200, 992, 768]
         });
-    } catch(err) {}
+    } catch (err) { }
 
     /*========== TIME PICKER ==========*/
     try {
@@ -363,12 +368,12 @@
             'maxTime': '11:00pm',
             'timeFormat': 'h : i a'
         });
-    } catch(err) {}
-    
+    } catch (err) { }
+
     /*========== NAVBAR ==========*/
     try {
         var navbarOffset = $(".navbar-desktop").offset().top;
-        $(window).on('scroll', function() {
+        $(window).on('scroll', function () {
             if ($(window).scrollTop() > navbarOffset) {
                 $(".navbar-desktop").not('.aside').addClass('fixed');
             } else {
@@ -376,14 +381,14 @@
             }
         });
         $(".navbar-desktop").not('.aside').find('li.has-children').on({
-            mouseenter: function(){
+            mouseenter: function () {
                 $(this).children().last().children().stop().slideDown();
-            }, 
-            mouseleave: function(){
+            },
+            mouseleave: function () {
                 $(this).children().last().children().stop().slideUp();
             }
         });
-    } catch(err) {}
+    } catch (err) { }
 
     /*========== MENU COLLAPSE ==========*/
     $('#menu-accordion li a').on('click', function () {
@@ -396,14 +401,14 @@
     try {
         var tagCloudBlog = $('.blog-standard .post .tagcloud');
         tagCloudBlog.prepend("<span class='lnr lnr-tag'></span>");
-    } catch(err) {}
+    } catch (err) { }
 
     /*========== COUNT DOWN ==========*/
     try {
-        $('[data-countdown]').each(function() {
+        $('[data-countdown]').each(function () {
             var $this = $(this),
-            finalDate = $(this).data('countdown');
-            $this.countdown(finalDate, function(event) {
+                finalDate = $(this).data('countdown');
+            $this.countdown(finalDate, function (event) {
                 var $this = $(this).html(event.strftime('' +
                     '<div class="time-box"><span class="time-number">%m</span> <span class="time-unit">months</span> </div>' +
                     '<div class="time-box"><span class="time-number">%D</span> <span class="time-unit">days</span> </div>' +
@@ -413,8 +418,8 @@
                 ));
             });
         });
-    } catch(err) {}
-    
+    } catch (err) { }
+
 
     /*========== SIDENAV MOBILE ==========*/
     var $nav = $('#main-nav');
@@ -428,23 +433,23 @@
     var $clone = null;
     var data = {};
     // calling like this only for demo purposes
-    var initNav = function(conf) {
-    if ($clone) {
-      // clear previous instance
-      $clone.remove();
-    }
-    // remove old toggle click event
-    $toggle.off('click');
-    // make new copy
-    $clone = $nav.clone();
-    // remember data
-    $.extend(data, conf)
-    // call the plugin
-    $clone.hcMobileNav($.extend({}, defaultData, data));
+    var initNav = function (conf) {
+        if ($clone) {
+            // clear previous instance
+            $clone.remove();
+        }
+        // remove old toggle click event
+        $toggle.off('click');
+        // make new copy
+        $clone = $nav.clone();
+        // remember data
+        $.extend(data, conf)
+        // call the plugin
+        $clone.hcMobileNav($.extend({}, defaultData, data));
     }
     // run first demo
     initNav({});
-    
+
     /*========== OWL CAROUSEL ==========*/
     // Feature
     $('#feature-carousel').owlCarousel({
@@ -452,33 +457,33 @@
         autoplayTimeout: 5000,
         autoplaySpeed: 2000,
         loop: true,
-        responsive:{
-            0:{
-                items:1,
+        responsive: {
+            0: {
+                items: 1,
                 dots: true,
                 margin: 0
             },
-            768:{
-                items:2,
+            768: {
+                items: 2,
                 margin: 0,
                 dots: false
             },
-            1200:{
-                items:3,
+            1200: {
+                items: 3,
                 margin: 30,
                 dots: false,
             }
         }
     });
-    $('#feature-prev').on('click',function(){
+    $('#feature-prev').on('click', function () {
         $('#feature-carousel').trigger('prev.owl.carousel');
     })
-    $('#feature-next').on('click', function(){
+    $('#feature-next').on('click', function () {
         $('#feature-carousel').trigger('next.owl.carousel');
     })
     // Image on menu sidebar
     $('#image-carousel').owlCarousel({
-        items:1,
+        items: 1,
         margin: 2
     });
     // Food slider
@@ -488,22 +493,22 @@
         autoplayTimeout: 5000,
         autoplaySpeed: 2000,
         loop: true,
-        responsive:{
-            0:{
-                items:1,
+        responsive: {
+            0: {
+                items: 1,
                 dots: true,
                 margin: 10
             },
-            768:{
-                items:2,
+            768: {
+                items: 2,
                 margin: 30
             },
-            992:{
-                items:3,
+            992: {
+                items: 3,
                 margin: 30
             },
-            1200:{
-                items:3,
+            1200: {
+                items: 3,
                 margin: 30,
             }
         }
@@ -515,42 +520,42 @@
         autoplaySpeed: 2000,
         loop: true,
         dotsEach: 3,
-        responsive:{
-            0:{
-                items:1,
+        responsive: {
+            0: {
+                items: 1,
                 dotsEach: 3
             },
-            768:{
+            768: {
                 items: 2,
                 margin: 30
             },
-            992:{
+            992: {
                 items: 3,
                 margin: 30
             }
         }
     });
     $('#testimonials-2-carousel').owlCarousel({
-        loop:true,
-        responsive:{
-            items:1,
-            0:{
-                items:1
+        loop: true,
+        responsive: {
+            items: 1,
+            0: {
+                items: 1
             },
-            768:{
-                items:1,
+            768: {
+                items: 1,
                 dots: false,
             },
-            1200:{
-                items:1,
+            1200: {
+                items: 1,
                 dots: false,
             }
         }
     });
-    $('#testimonials-2-carousel-prev').on('click', function(){
+    $('#testimonials-2-carousel-prev').on('click', function () {
         $('#testimonials-2-carousel').trigger('prev.owl.carousel');
     })
-    $('#testimonials-2-carousel-next').on('click', function(){
+    $('#testimonials-2-carousel-next').on('click', function () {
         $('#testimonials-2-carousel').trigger('next.owl.carousel');
     })
     // Special slider
@@ -560,19 +565,19 @@
         autoplayTimeout: 5000,
         autoplaySpeed: 2000,
         dotsEach: 4,
-        responsive:{
-            0:{
-                items:1
+        responsive: {
+            0: {
+                items: 1
             },
-            768:{
+            768: {
                 items: 3,
                 margin: 20
             },
-            1200:{
+            1200: {
                 items: 4,
                 margin: 30
             },
-            1500:{
+            1500: {
                 items: 4
             }
         }
@@ -583,20 +588,20 @@
         autoplayTimeout: 5000,
         autoplaySpeed: 2000,
         dotsEach: 4,
-        responsive:{
-            0:{
-                items:1
+        responsive: {
+            0: {
+                items: 1
             },
-            768:{
+            768: {
                 items: 2
             },
-            992:{
+            992: {
                 items: 3
             },
-            1200:{
+            1200: {
                 items: 4
             },
-            1500:{
+            1500: {
                 items: 5
             }
         }
@@ -608,15 +613,15 @@
         autoplay: true,
         autoplayTimeout: 5000,
         autoplaySpeed: 2000,
-        responsive:{
-            0:{
-                items:1
+        responsive: {
+            0: {
+                items: 1
             },
-            768:{
+            768: {
                 items: 2,
                 margin: 20
             },
-            1500:{
+            1500: {
                 items: 2,
                 margin: 40,
                 autoWidth: true
@@ -639,14 +644,14 @@
         autoplaySpeed: 2000,
         dotsEach: 2,
         margin: 30,
-        responsive:{
-            0:{
-                items:1
+        responsive: {
+            0: {
+                items: 1
             },
-            768:{
+            768: {
                 items: 2
             },
-            1200:{
+            1200: {
                 items: 4
             }
         }
@@ -654,7 +659,7 @@
     // Two sync carousel
     var carouselCenter = $('#special-carousel-center');
     var carouselBox = $('#special-carousel-box')
-    carouselCenter.on('change.owl.carousel', function(event) {
+    carouselCenter.on('change.owl.carousel', function (event) {
         if (event.namespace && event.property.name === 'position') {
             var target = event.relatedTarget.relative(event.property.value, true);
             carouselBox.owlCarousel('to', target, 300, true);
@@ -667,31 +672,31 @@
         autoplayTimeout: 5000,
         autoplaySpeed: 2000,
         dotsEach: 4,
-        responsive:{
-            0:{
-                items:1
+        responsive: {
+            0: {
+                items: 1
             },
-            768:{
+            768: {
                 items: 3,
                 margin: 30
             },
-            992:{
+            992: {
                 items: 4,
                 margin: 30
             },
-            1200:{
+            1200: {
                 items: 5,
                 margin: 30
             },
-            1500:{
+            1500: {
                 items: 6,
                 margin: 30
             }
         }
     });
-    
-    if ( windowWidth >= 992 ) {
-        $('#cupcake-slider').on('translated.owl.carousel', function(event) {
+
+    if (windowWidth >= 992) {
+        $('#cupcake-slider').on('translated.owl.carousel', function (event) {
             var firstOwlItem = $('#cupcake-slider .owl-stage .owl-item.active').first();
             var lastOwlItem = $('#cupcake-slider .owl-stage .owl-item.active').last();
             $(this).find('.owl-item').removeClass('opacity');
@@ -702,15 +707,15 @@
     // Our chef slider
     $('#our-chef-carousel').owlCarousel({
         dotsEach: 3,
-        responsive:{
-            0:{
-                items:1
+        responsive: {
+            0: {
+                items: 1
             },
-            768:{
+            768: {
                 items: 2,
                 margin: 30
             },
-            992:{
+            992: {
                 items: 3,
                 margin: 30
             }
@@ -718,24 +723,24 @@
     });
     // Grid image
     $('#grid-image').owlCarousel({
-        loop:true,
-        responsive : {
-            0 : {
-               items: 1
+        loop: true,
+        responsive: {
+            0: {
+                items: 1
             },
-            768 : {
-               items: 2
+            768: {
+                items: 2
             },
-            992 : {
-               items: 3
+            992: {
+                items: 3
             },
-            1200 : {
-               items: 4
+            1200: {
+                items: 4
             }
         }
     })
     $('#grid-image').on('mousewheel', '.owl-stage', function (e) {
-        if (e.deltaY>0) {
+        if (e.deltaY > 0) {
             $('#grid-image').trigger('next.owl');
         } else {
             $('#grid-image').trigger('prev.owl');
@@ -744,7 +749,7 @@
     });
     var shop_single_carousel = $('#shop-single-image');
     shop_single_carousel.owlCarousel({
-        loop:true,
+        loop: true,
         items: 1,
         dots: false,
         thumbs: true,
@@ -752,16 +757,16 @@
     })
 
     /*========== SELECT INPUT ==========*/
-    $('html').on('click', function(){
-        $('.select .dropdown').hide(); 
+    $('html').on('click', function () {
+        $('.select .dropdown').hide();
     })
-    $('.select').on('click', function(){
+    $('.select').on('click', function () {
         event.stopPropagation();
     })
-    $('.select .form-control').on('click', function(){
+    $('.select .form-control').on('click', function () {
         $(this).parent().next().toggle();
     })
-    $('.select .dropdown li').on('click', function(){
+    $('.select .dropdown li').on('click', function () {
         $(this).parent().toggle();
         var text = $(this).data('value');
         $(this).parent().prev().find('div').text(text);
@@ -772,37 +777,37 @@
         $('.lightgallery').lightGallery({
             'showAfterLoad': false
         });
-    } catch(err) {}
-    
+    } catch (err) { }
+
     /*========== MENU SIDEBAR ==========*/
-    $('.menu-sidebar-icon').on('click', function(){
+    $('.menu-sidebar-icon').on('click', function () {
         $('.menu-sidebar').addClass('show');
     })
-    $('#close-icon').on('click',function(){
+    $('#close-icon').on('click', function () {
         $('.menu-sidebar').removeClass('show');
     })
-    $('html').on('click', function() {
+    $('html').on('click', function () {
         $('.menu-sidebar').removeClass('show');
     });
-    $('.menu-sidebar').on('click', function(event){
+    $('.menu-sidebar').on('click', function (event) {
         event.stopPropagation();
     });
-    $('.menu-sidebar-icon').on('click', function(event){
+    $('.menu-sidebar-icon').on('click', function (event) {
         event.stopPropagation();
     });
-    
+
     /*========== FULLPAGE ==========*/
     try {
-        if ( $(window).width() >= 768 ) {
-             $('#fullpage').fullpage({
-                navigation: true,   
-                onLeave: function(index, nextIndex, direction) {
+        if ($(window).width() >= 768) {
+            $('#fullpage').fullpage({
+                navigation: true,
+                onLeave: function (index, nextIndex, direction) {
 
                     var progressbarCircle = $('.js-progress-circle');
 
-                    if(index == 1 && direction == "down") {
+                    if (index == 1 && direction == "down") {
 
-                        progressbarCircle.each(function(){
+                        progressbarCircle.each(function () {
                             var that = $(this);
                             var percentage = that.data("value");
                             var color = that.data("color");
@@ -811,7 +816,7 @@
 
                             var empty_fill = that.data("empty-color");
 
-                            that.find('.js-dot').css('background',color);
+                            that.find('.js-dot').css('background', color);
 
                             var circle = circle_wrap.circleProgress({
                                 size: 139,
@@ -829,31 +834,31 @@
                             });
                             circle.on('circle-animation-progress', function (e, p, v) {
                                 var $this = $(this),
-                                instance = $this.data('circle-progress'),
-                                size = instance.size, 
-                                thickness = instance.getThickness(),
-                                radius = size / 2 - thickness / 2,
-                                angle = 2 * v * Math.PI + instance.startAngle,
-                                x = radius * Math.cos(angle),
-                                y = radius * Math.sin(angle);
+                                    instance = $this.data('circle-progress'),
+                                    size = instance.size,
+                                    thickness = instance.getThickness(),
+                                    radius = size / 2 - thickness / 2,
+                                    angle = 2 * v * Math.PI + instance.startAngle,
+                                    x = radius * Math.cos(angle),
+                                    y = radius * Math.sin(angle);
                                 $this.find('.dot').css({
                                     left: x + size / 2,
                                     top: y + size / 2
                                 });
-                            });        
-                        });    
+                            });
+                        });
                     }
                 }
             });
-            $('.prev-slide').on('click', function(){
+            $('.prev-slide').on('click', function () {
                 $.fn.fullpage.moveSlideLeft();
             });
-            $('.next-slide').on('click', function(){
+            $('.next-slide').on('click', function () {
                 $.fn.fullpage.moveSlideRight();
             });
         }
-    } catch(err) {}
-   
+    } catch (err) { }
+
     /*========== TABS ==========*/
     try {
         $("#tabs").tabs({
@@ -868,95 +873,95 @@
             hide: { effect: "fadeOut", duration: 300 },
             show: { effect: "fadeIn", duration: 300 }
         });
-    } catch(err) {}
+    } catch (err) { }
 
     /*========== CIRCLE JS ==========*/
     try {
         var progressbarCircle = $('.js-progress-circle');
         progressbarCircle.each(function () {
-        var that = $(this);
-        var executed = false;
+            var that = $(this);
+            var executed = false;
 
-        var percentage = that.data("value");
-        var color = that.data("color");
-        var circle_wrap = that.find('.js-circle');
-        var progress = percentage / 100;
+            var percentage = that.data("value");
+            var color = that.data("color");
+            var circle_wrap = that.find('.js-circle');
+            var progress = percentage / 100;
 
-        var empty_fill = that.data("empty-color");
+            var empty_fill = that.data("empty-color");
 
-        that.find('.js-dot').css('background',color);
+            that.find('.js-dot').css('background', color);
 
-        var circle = circle_wrap.circleProgress({
-            size: 139,
-            thickness: 5,
-            animation: {
-                duration: 1600
-            },
-            fill: color,
-            emptyFill: empty_fill,
-            reverse: false
-        });
-        $(window).on('load', function () {
-            that.waypoint(function () {
-                if (!executed) {
-                    executed = true;
-                    circle = circle_wrap.circleProgress({
-                        value: progress
-                    });
-                    circle.on('circle-animation-progress', function (e, p, v) {
-                        var $this = $(this),
-                        instance = $this.data('circle-progress'),
-                        size = instance.size, 
-                        thickness = instance.getThickness(),
-                        radius = size / 2 - thickness / 2,
-                        angle = 2 * v * Math.PI + instance.startAngle,
-                        x = radius * Math.cos(angle),
-                        y = radius * Math.sin(angle);
-                        $this.find('.dot').css({
-                            left: x + size / 2,
-                            top: y + size / 2
+            var circle = circle_wrap.circleProgress({
+                size: 139,
+                thickness: 5,
+                animation: {
+                    duration: 1600
+                },
+                fill: color,
+                emptyFill: empty_fill,
+                reverse: false
+            });
+            $(window).on('load', function () {
+                that.waypoint(function () {
+                    if (!executed) {
+                        executed = true;
+                        circle = circle_wrap.circleProgress({
+                            value: progress
                         });
-                    });
-                }
-            }, { offset: 'bottom-in-view' });
+                        circle.on('circle-animation-progress', function (e, p, v) {
+                            var $this = $(this),
+                                instance = $this.data('circle-progress'),
+                                size = instance.size,
+                                thickness = instance.getThickness(),
+                                radius = size / 2 - thickness / 2,
+                                angle = 2 * v * Math.PI + instance.startAngle,
+                                x = radius * Math.cos(angle),
+                                y = radius * Math.sin(angle);
+                            $this.find('.dot').css({
+                                left: x + size / 2,
+                                top: y + size / 2
+                            });
+                        });
+                    }
+                }, { offset: 'bottom-in-view' });
+            })
         })
-    })
-    } catch (error) {}
+    } catch (error) { }
 
     /*========== MODAL VIDEO ==========*/
     try {
-        $(".js-video-button").on('click', function(e){
+        $(".js-video-button").on('click', function (e) {
             e.preventDefault();
         })
         $(".js-video-button").modalVideo();
-    } catch(err) {}
-    
+    } catch (err) { }
+
     /*========== ZOOM ==========*/
     try {
         $("#zoom-image").elevateZoom({
-            gallery:'shop-single-thumb', 
-            cursor: "crosshair", 
-            galleryActiveClass: 'active', 
+            gallery: 'shop-single-thumb',
+            cursor: "crosshair",
+            galleryActiveClass: 'active',
             zoomType: "inner",
         });
-    } catch(err) {}
+    } catch (err) { }
 
     /*========== INCRESE VALUE ==========*/
-    $(".number-button").on("click", function(e) {
+    $(".number-button").on("click", function (e) {
         e.preventDefault();
         var $button = $(this);
         var input_quantity = $button.parent().prev();
         var oldValue = input_quantity.val();
 
         if ($button.hasClass('plus')) {
-          var newVal = parseFloat(oldValue) + 1;
+            var newVal = parseFloat(oldValue) + 1;
         } else {
-           // Don't allow decrementing below zero
-          if (oldValue > 0) {
-            var newVal = parseFloat(oldValue) - 1;
+            // Don't allow decrementing below zero
+            if (oldValue > 0) {
+                var newVal = parseFloat(oldValue) - 1;
             } else {
-            newVal = 0;
-          }
+                newVal = 0;
+            }
         }
         input_quantity.val(newVal);
     });
@@ -971,7 +976,7 @@
             scrollwheel: false,
             nav: true
         });
-    } catch(err) {}
+    } catch (err) { }
 
     /*========== SET FULL HEIGHT ==========*/
     try {
@@ -980,7 +985,7 @@
         $('#grid-image').height(exceptHeight);
         $('.coming-soon').height(exceptHeight);
         $('.error').height(exceptHeight);
-    } catch(err) {}
+    } catch (err) { }
 
     /*========== noUISLIDER ==========*/
     try {
@@ -993,11 +998,11 @@
                 'max': 100
             },
             format: {
-                from: function(value) {
-                    return parseInt(value,10);
+                from: function (value) {
+                    return parseInt(value, 10);
                 },
-                to: function(value) {
-                    return parseInt(value,10);
+                to: function (value) {
+                    return parseInt(value, 10);
                 }
             }
         });
@@ -1005,16 +1010,16 @@
             document.getElementById('lower-value'), // 0
             document.getElementById('upper-value')  // 1
         ];
-        slider.noUiSlider.on('update', function ( values, handle, unencoded, isTap, positions ) {
+        slider.noUiSlider.on('update', function (values, handle, unencoded, isTap, positions) {
             nodes[handle].innerHTML = values[handle];
         });
 
         // Display the slider value and how far the handle moved
         // from the left edge of the slider.
-        nonLinearSlider.noUiSlider.on('update', function ( values, handle, unencoded, isTap, positions ) {
+        nonLinearSlider.noUiSlider.on('update', function (values, handle, unencoded, isTap, positions) {
             nodes[handle].innerHTML = values[handle] + ', ' + positions[handle].toFixed(2) + '%';
         });
-    } catch(err) {}
+    } catch (err) { }
 
     /*========== SECTION BACKGROUND ==========*/
     try {
@@ -1022,54 +1027,53 @@
             var bg = ('url(' + $(this).data("image-src") + ')');
             return bg;
         });
-    } catch(err){}
+    } catch (err) { }
     /*========== CONFIG CONTACT ==========*/
     try {
         var contactFormWrapper = $('.js-contact-form');
         contactFormWrapper.each(function () {
-           var that = $(this);
+            var that = $(this);
             that.on('submit', function (e) {
                 var url = "includes/contact-form.php";
                 $.ajax({
                     type: "POST",
                     url: url,
                     data: $(this).serialize(),
-                    success: function (data)
-                    {
+                    success: function (data) {
                         var result = JSON.parse(data);
                         var message = result.message;
                         var type = result.type;
                         if (type === "success") {
-                            swal ( "Success" ,  message ,  "success" );
+                            swal("Success", message, "success");
                             that.reset();
                         } else if (type === "danger") {
-                            swal ( "Oops" ,  message ,  "error" );
+                            swal("Oops", message, "error");
                         }
                     },
                     statusCode: {
-                        404: function() {
-                            swal ( "Oops" ,  "File Not Found!" ,  "error" );
+                        404: function () {
+                            swal("Oops", "File Not Found!", "error");
                         }
                     },
-                    error: function (jqXHR, textStatus, errorThrown ) {
-                        swal ( "Oops" ,  errorThrown  ,  "error" );
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        swal("Oops", errorThrown, "error");
                     }
                 });
                 return false;
             });
         });
-    } catch(err) {}
+    } catch (err) { }
 
 })(jQuery);
 
-/*========== WOW JS ==========*/ 
+/*========== WOW JS ==========*/
 try {
     wow = new WOW(
-      {
-        animateClass: 'animated'
-      }
+        {
+            animateClass: 'animated'
+        }
     );
     wow.init();
-} catch(err) {}
+} catch (err) { }
 
 
